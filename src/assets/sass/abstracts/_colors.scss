@@ -1,46 +1,130 @@
-$colors: (
-  neutral: (
-    100: 0 0% 100%,
-    200: 0 0% 90%,
-    300: 0 0% 70%,
-    400: 0 0% 60%,
-    500: 0 0% 50%,
-    600: 0 0% 40%,
-    700: 0 0% 30%,
-    800: 0 0% 10%,
-    900: 0 0% 0%,
+$palette: (
+  ligth: (
+    primary: #0d6efd,
+    secondary: #6f42c1,
+    error: #dc3545,
+    success: #198754,
+    info: #20c997,
+    warning: #ffc107,
+    devider: #adb5bd,
   ),
-  primary: (
-    100: 214 100% 90%,
-    200: 214 100% 80%,
-    300: 214 100% 70%,
-    400: 214 100% 60%,
-    500: 214 100% 50%,
-    600: 214 100% 40%,
-    700: 214 100% 30%,
-    800: 214 100% 20%,
-    900: 214 100% 10%,
+  dark: (
+    primary: #084298,
+    secondary: #432181,
+    error: #dc3545,
+    success: #198754,
+    info: #20c997,
+    warning: #ffc107,
+    devider: #adb5bd,
   ),
-  secondary: (
-    100: 284 71% 90%,
-    200: 284 71% 80%,
-    300: 284 71% 70%,
-    400: 284 71% 60%,
-    500: 284 71% 50%,
-    600: 284 71% 40%,
-    700: 284 71% 30%,
-    800: 284 71% 20%,
-    900: 284 71% 10%,
+);
+
+$pallete-shades: (
+  ligth: (
+    primary: (
+      100: #cfe2ff,
+      200: #9ec5fe,
+      300: #6ea8fe,
+      400: #3d8bfd,
+      500: #0d6efd,
+      600: #0a58ca,
+      700: #084298,
+      800: #052c65,
+      900: #031633,
+    ),
+    secondary: (
+      100: #e2d9f3,
+      200: #c5b3e6,
+      300: #a98eda,
+      400: #8c68cd,
+      500: #6f42c1,
+      600: #59359a,
+      700: #432874,
+      800: #2c1a4d,
+      900: #160d27,
+    ),
   ),
-  accent: (
-    100: 346 80% 90%,
-    200: 346 80% 80%,
-    300: 346 80% 70%,
-    400: 346 80% 60%,
-    500: 346 80% 50%,
-    600: 346 80% 40%,
-    700: 346 80% 30%,
-    800: 346 80% 20%,
-    900: 346 80% 10%,
-  )
-)
+  dark: (
+    primary: (
+      900: #cfe2ff,
+      800: #9ec5fe,
+      700: #6ea8fe,
+      600: #3d8bfd,
+      500: #0d6efd,
+      400: #0a58ca,
+      300: #084298,
+      200: #052c65,
+      100: #031633,
+    ),
+    secondary: (
+      900: #e2d9f3,
+      800: #c5b3e6,
+      700: #a98eda,
+      600: #8c68cd,
+      500: #6f42c1,
+      400: #59359a,
+      300: #432874,
+      200: #2c1a4d,
+      100: #160d27,
+    ),
+  ),
+);
+
+$texts: (
+  ligth: (
+    primary: #212529,
+    secondary: #495057,
+    error: #dc3545,
+    success: #198754,
+    info: #20c997,
+    warning: #ffc107,
+    disable: #e9ecef,
+    active: #000,
+  ),
+  dark: (
+    primary: #cacfd4,
+    secondary: #737e8a,
+    error: #dc3545,
+    success: #198754,
+    info: #20c997,
+    warning: #ffc107,
+    disable: #5a5a5a,
+    active: rgb(255, 251, 251),
+  ),
+);
+
+$backgrounds: (
+  ligth: (
+    backgrounds: #fff,
+    surface: #f8f9fa,
+    selectedText: #e9ecef,
+  ),
+  dark: (
+    backgrounds: #052c65,
+    surface: #6ea8fe,
+    selectedText: #6ea8fe,
+  ),
+);
+
+$borders: (
+  ligth: (
+    primary: #212529,
+    secondary: #495057,
+    error: #dc3545,
+    success: #198754,
+    info: #20c997,
+    warning: #ffc107,
+    disable: #e9ecef,
+    active: #000,
+  ),
+  dark: (
+    primary: #cacfd4,
+    secondary: #737e8a,
+    error: #dc3545,
+    success: #198754,
+    info: #20c997,
+    warning: #ffc107,
+    disable: #474849,
+    active: rgb(255, 254, 254),
+  ),
+);
