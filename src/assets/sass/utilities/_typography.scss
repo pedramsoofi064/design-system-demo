@@ -1,0 +1,135 @@
+@use "../abstracts" as *;
+
+@mixin typography-H1 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: 0em;
+
+  @include breakpoint(lg) {
+    font-size: 72px;
+    line-height: 98px;
+  }
+}
+@mixin typography-H2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55px;
+  letter-spacing: 0em;
+
+  @include breakpoint(lg) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 66px;
+    text-transform: capitalize;
+  }
+}
+
+@mixin typography-H3 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+
+  @include breakpoint(lg) {
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
+
+@mixin typography-H4 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+
+  @include breakpoint(lg) {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+
+@mixin typography-H5 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+
+  @include breakpoint(lg) {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
+@mixin typography-H6 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+
+  @include breakpoint(lg) {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+@mixin typography-body {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+
+  @include breakpoint(lg) {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@mixin typography-bold {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+
+  @include breakpoint(lg) {
+    font-weight: 700;
+    line-height: 28px;
+  }
+}
+
+@mixin typography-caption {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: 0em;
+
+  @include breakpoint(lg) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@mixin typography-overline {
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px;
+  letter-spacing: 0em;
+
+  @include breakpoint(lg) {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}

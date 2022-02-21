@@ -4,7 +4,7 @@
 .even-columns {
   @extend .grid;
 
-  @include mq(medium) {
+  @include breakpoint(medium) {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   } 

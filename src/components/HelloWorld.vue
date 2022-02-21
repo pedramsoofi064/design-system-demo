@@ -1,20 +1,22 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h3>{{ msg }}</h3>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "@/assets/sass/utilities/typography.scss";
 h3 {
+  @include typography-H3;
   margin: 40px 0 0;
 }
 ul {

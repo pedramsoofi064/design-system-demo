@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
 :root {
+  
   @each $theme, $color in $palette {
     [data-theme="#{$theme}"] {
       @each $name, $value in $color {
@@ -62,7 +63,7 @@
         --fs-#{$prop}: #{$value};
       }
     } @else {
-      @include mq($screen-size) {
+      @include breakpoint($screen-size) {
         @each $prop, $value in $property {
           --fs-#{$prop}: #{$value};
         }
