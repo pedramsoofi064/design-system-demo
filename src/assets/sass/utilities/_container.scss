@@ -1,4 +1,7 @@
+@use '../abstracts/' as *;
+
+
 .container {
   margin-inline: auto;
-  padding-inline: var(--spacer);
+  padding-inline: $spacer;
 }
