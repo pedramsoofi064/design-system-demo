@@ -47,11 +47,6 @@
   }
 
 
-
-  $ff-primary: 'Heebo', sans-serif;
-  $ff-secondary: 'Bungee', cursive;
-  $ff-accent: 'Bungee Shade', cursive;
-
   --spacer: #{$spacer};
 
   // @each $color, $shade in $colors {
@@ -61,17 +56,5 @@
   // }
   // }
 
-  @each $screen-size, $property in $font-sizes {
-    @if $screen-size == small {
-      @each $prop, $value in $property {
-        --fs-#{$prop}: #{$value};
-      }
-    } @else {
-      @include breakpoint($screen-size) {
-        @each $prop, $value in $property {
-          --fs-#{$prop}: #{$value};
-        }
-      }
-    }
-  }
+
 }

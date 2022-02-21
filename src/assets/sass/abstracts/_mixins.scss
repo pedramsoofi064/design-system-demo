@@ -6,3 +6,11 @@
     @content;
   }
 }
+
+@mixin flex($dir: row , $align: center, $justify: between , $wrap: nowrap) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+}

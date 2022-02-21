@@ -1,8 +1,8 @@
-@use 'grid' as *;
 @use '../abstracts/' as *;
 
 .even-columns {
-  @extend .grid;
+  display: grid;
+
 
   @include breakpoint(medium) {
     grid-auto-flow: column;
