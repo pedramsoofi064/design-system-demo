@@ -1,5 +1,5 @@
-<template >
-  <div id="main" data-theme="dark" >
+<template>
+  <div id="main" data-theme="dark">
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Design system demo App 🎇" />
   </div>
@@ -13,6 +13,9 @@ export default {
   components: {
     HelloWorld,
   },
+  mounted() {
+    console.log(this);
+  }
 };
 </script>
 
@@ -28,5 +31,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 </style>

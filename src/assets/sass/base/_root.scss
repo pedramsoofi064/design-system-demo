@@ -3,7 +3,7 @@
 :root {
   
   @each $theme, $color in $palette {
-    [data-theme="#{$theme}"] {
+    &[data-theme="#{$theme}"] {
       @each $name, $value in $color {
         --clr-#{$name}: #{$value};
       }
@@ -11,7 +11,7 @@
   }
 
   @each $theme, $color in $pallete-shades {
-    [data-theme="#{$theme}"] {
+    &[data-theme="#{$theme}"] {
       @each $name, $shade in $color {
         @each $property, $value in $shade {
           --#{$name}-shade-#{$property}: #{$value};
@@ -21,21 +21,25 @@
   }
 
   @each $theme, $color in $texts {
-    [data-theme="#{$theme}"] {
+    &[data-theme="#{$theme}"] {
       @each $name, $value in $color {
         --text-#{$name}: #{$value};
       }
     }
   }
+
+  
   @each $theme, $color in $backgrounds {
-    [data-theme="#{$theme}"] {
+    &[data-theme="#{$theme}"] {
       @each $name, $value in $color {
         --bg-#{$name}: #{$value};
       }
     }
   }
+
+
   @each $theme, $color in $borders {
-    [data-theme="#{$theme}"] {
+    & [data-theme="#{$theme}"] {
       @each $name, $value in $color {
         --border-#{$name}: #{$value};
       }
@@ -44,9 +48,9 @@
 
 
 
-  --ff-primary: #{$ff-primary};
-  --ff-secondary: #{$ff-secondary};
-  --ff-accent: #{$ff-accent};
+  $ff-primary: 'Heebo', sans-serif;
+  $ff-secondary: 'Bungee', cursive;
+  $ff-accent: 'Bungee Shade', cursive;
 
   --spacer: #{$spacer};
 

@@ -9,8 +9,8 @@ $palette: (
     devider: #adb5bd,
   ),
   dark: (
-    primary: #084298,
-    secondary: #432181,
+    primary: #6ea8fe,
+    secondary: #a98eda,
     error: #dc3545,
     success: #198754,
     info: #20c997,
@@ -95,12 +95,12 @@ $texts: (
 
 $backgrounds: (
   ligth: (
-    backgrounds: #fff,
+    primary: #fff,
     surface: #f8f9fa,
     selectedText: #e9ecef,
   ),
   dark: (
-    backgrounds: #052c65,
+    primary: #052c65,
     surface: #6ea8fe,
     selectedText: #6ea8fe,
   ),
