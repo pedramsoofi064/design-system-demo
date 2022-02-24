@@ -30,7 +30,10 @@ export default {
 h3 {
   @include typography-H3;
   margin: 40px 0 0;
-  color: var(--text-primary)
+  $c : green;
+  --c : $c;
+  color: var(--c);
+  $c : red;
 }
 .theme-handling {
   margin-top: 50px;
