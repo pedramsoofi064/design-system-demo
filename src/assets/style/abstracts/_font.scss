@@ -1,0 +1,29 @@
+$ff-primary: iranyekan;
+$ff-secondary: iranyekan;
+
+$font-url: "../fonts";
+
+$font-faces: (
+  $ff-primary: (
+    300: (
+      font-style: normal,
+      font-weight: 300,
+      src: url("#{$font-url}/woff/iranyekanweblight(fanum).woff"),
+    ),
+    normal: (
+      font-style: normal,
+      font-weight: normal,
+      src: url("#{$font-url}/woff/iranyekanwebregular(fanum).woff"),
+    ),
+    bold: (
+      font-style: normal,
+      font-weight: bold,
+      src: url("#{$font-url}/woff/iranyekanwebbold(fanum).woff"),
+    ),
+  ),
+  //   $ff-secondary: (
+  //       300: (),
+  //       normal: (),
+  //       bold: (),
+  //     ),,,,
+);

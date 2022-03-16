@@ -1,0 +1,130 @@
+$palette: (
+  ligth: (
+    primary: #0d6efd,
+    secondary: #6f42c1,
+    error: #dc3545,
+    success: #198754,
+    info: #20c997,
+    warning: #ffc107,
+    devider: #adb5bd,
+  ),
+  dark: (
+    primary: #6ea8fe,
+    secondary: #a98eda,
+    error: #dc3545,
+    success: #198754,
+    info: #20c997,
+    warning: #ffc107,
+    devider: #adb5bd,
+  ),
+);
+
+$pallete-shades: (
+  ligth: (
+    primary: (
+      100: #cfe2ff,
+      200: #9ec5fe,
+      300: #6ea8fe,
+      400: #3d8bfd,
+      500: #0d6efd,
+      600: #0a58ca,
+      700: #084298,
+      800: #052c65,
+      900: #031633,
+    ),
+    secondary: (
+      100: #e2d9f3,
+      200: #c5b3e6,
+      300: #a98eda,
+      400: #8c68cd,
+      500: #6f42c1,
+      600: #59359a,
+      700: #432874,
+      800: #2c1a4d,
+      900: #160d27,
+    ),
+  ),
+  dark: (
+    primary: (
+      900: #cfe2ff,
+      800: #9ec5fe,
+      700: #6ea8fe,
+      600: #3d8bfd,
+      500: #0d6efd,
+      400: #0a58ca,
+      300: #084298,
+      200: #052c65,
+      100: #031633,
+    ),
+    secondary: (
+      900: #e2d9f3,
+      800: #c5b3e6,
+      700: #a98eda,
+      600: #8c68cd,
+      500: #6f42c1,
+      400: #59359a,
+      300: #432874,
+      200: #2c1a4d,
+      100: #160d27,
+    ),
+  ),
+);
+
+$texts: (
+  ligth: (
+    primary: #212529,
+    secondary: #495057,
+    error: #dc3545,
+    success: #198754,
+    info: #20c997,
+    warning: #ffc107,
+    disable: #e9ecef,
+    active: #000,
+  ),
+  dark: (
+    primary: #cacfd4,
+    secondary: #737e8a,
+    error: #dc3545,
+    success: #198754,
+    info: #20c997,
+    warning: #ffc107,
+    disable: #5a5a5a,
+    active: rgb(255, 251, 251),
+  ),
+);
+
+$backgrounds: (
+  ligth: (
+    primary: #fff,
+    surface: #f8f9fa,
+    selectedText: #e9ecef,
+  ),
+  dark: (
+    primary: #052c65,
+    surface: #6ea8fe,
+    selectedText: #6ea8fe,
+  ),
+);
+
+$borders: (
+  ligth: (
+    primary: #212529,
+    secondary: #495057,
+    error: #dc3545,
+    success: #198754,
+    info: #20c997,
+    warning: #ffc107,
+    disable: #e9ecef,
+    active: #000,
+  ),
+  dark: (
+    primary: #cacfd4,
+    secondary: #737e8a,
+    error: #dc3545,
+    success: #198754,
+    info: #20c997,
+    warning: #ffc107,
+    disable: #474849,
+    active: rgb(255, 254, 254),
+  ),
+);

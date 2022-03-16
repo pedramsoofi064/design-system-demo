@@ -1,9 +1,13 @@
 <template>
   <div class="hello">
-    <h3>{{ msg }}</h3>
+    <div class="message">{{ msg }}</div>
+    {{ theme }}
     <div class="theme-handling">
-      <button @click="changeTheme">change theme</button>
+      <button @click="changeTheme('dark')">dark theme</button>
+      <button @click="changeTheme('ligth')">ligth theme</button>
     </div>
+
+    <div class="test-elevation elevation-2">this is a example for seeing elevation</div>
   </div>
 </template>
 
@@ -14,36 +18,45 @@ export default {
     msg: String,
   },
   methods: {
-    changeTheme() {
-      const root = document.querySelector(':root');
-      const theme = root.getAttribute('theme')
-      root.setAttribute('theme' , theme == 'ligth' ? 'dark' : 'ligth')
-    }
-  }
+    changeTheme(theme) {
+      const root = document.querySelector(":root");
+      root.setAttribute("theme", theme);
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/sass/utilities/typography.scss";
-@import "@/assets/sass/abstracts";
+@import "@/assets/style/abstracts";
+@import "@/assets/style/tools/typography";
+@import "@/assets/style/tools/spacing";
 
-h3 {
-  @include typography-H3;
+.message {
   margin: 40px 0 0;
-  $c : green;
-  --c : $c;
-  color: var(--c);
-  $c : red;
+  @include typography(h1);
 }
 .theme-handling {
   margin-top: 50px;
+
   > button {
     cursor: pointer;
-    @include typography-bold;
     padding: 10px;
     border-radius: $border-radius;
     background-color: var(--clr-primary);
-    color: var(--text-primary)
+    color: var(--text-primary);
+
+    &:first-child {
+      margin-right: space(4);
+    }
   }
+}
+
+.test-elevation {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: space(10);;
+  
 }
 </style>
