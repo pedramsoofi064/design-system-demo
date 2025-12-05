@@ -1,6 +1,23 @@
 {
-  "name": "design-system-test",
-  "version": "0.1.0",
+  "name": "design-system-demo",
+  "version": "1.0.0",
+  "description": "A comprehensive, scalable design system implementation built with Vue.js and SCSS, following 7-1 architecture pattern, Material Design principles, and Object-Oriented CSS concepts",
+  "keywords": [
+    "design-system",
+    "vue",
+    "scss",
+    "sass",
+    "material-design",
+    "oocss",
+    "7-1-architecture",
+    "css-architecture",
+    "design-tokens",
+    "theme-system",
+    "elevation",
+    "typography"
+  ],
+  "author": "",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
